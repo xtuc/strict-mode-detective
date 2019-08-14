@@ -1,0 +1,8 @@
+  1 | function hi() {
+> 2 |   c = 1;
+    |  ^^^^^
+  3 | }
+  4 | hi();
+  5 | 
+undeclared assignement 
+

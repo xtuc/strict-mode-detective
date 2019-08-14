@@ -1,0 +1,8 @@
+  1 | function f() {
+> 2 |   arguments.callee;
+    |  ^^^^^^^^^^^^^^^^
+  3 | }
+  4 | 
+  5 | f();
+potentially illegal arguments.callee usage 
+

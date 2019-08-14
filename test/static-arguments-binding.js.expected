@@ -1,0 +1,3 @@
+  1 | function f(arguments) {}
+  2 | 
+Binding 'arguments' in strict mode (1:11)

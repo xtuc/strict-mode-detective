@@ -1,0 +1,8 @@
+  1 | function f() {
+> 2 |   f.caller;
+    |  ^^^^^^^^
+  3 | }
+  4 | 
+  5 | f();
+potentially illegal f.caller usage 
+

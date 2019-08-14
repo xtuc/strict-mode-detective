@@ -1,0 +1,72 @@
+run () {
+  echo $1
+  curl -s --fail -L $1 > /tmp/test.js
+  node ./index.js /tmp/test.js
+}
+
+# # bundle.run top
+# run "https://bundle.run/css-scroll-snap-polyfill@0.1.2"
+# run "https://bundle.run/charming"
+# run "https://bundle.run/charming@3.0.1"
+# run "https://bundle.run/intersection-observer@0.5.0"
+# run "https://bundle.run/sanctuary@latest"
+# run "https://bundle.run/ramda-fantasy@latest"
+# run "https://bundle.run/kitsu@5/legacy/index.js"
+# run "https://bundle.run/@babel/polyfill@7"
+# run "https://bundle.run/kitsu@5.2.2/legacy/index.js"
+# run "https://bundle.run/@babel/polyfill@7.4.4"
+# run "https://bundle.run/sanctuary@2.0.0"
+# run "https://bundle.run/ramda-fantasy@0.8.0"
+# run "https://bundle.run/uuid@3.3.2"
+# run "https://bundle.run/line-clamp"
+# run "https://bundle.run/seedrandom@3.0.1"
+# run "https://bundle.run/xlsx@latest"
+# run "https://bundle.run/lineclip@1.1.5"
+# run "https://bundle.run/@thi.ng/defmulti"
+# run "https://bundle.run/pixelmatch@5.0.2"
+# run "https://bundle.run/line-clamp@1.0.0"
+# run "https://bundle.run/robots.txt"
+# run "https://bundle.run/robots.txt@1.1.0"
+# run "https://bundle.run/@yarnpkg/lockfile"
+# run "https://bundle.run/discrete-sampling@1.0.3"
+# run "https://bundle.run/dentist@1.0.3"
+# run "https://bundle.run/@thi.ng/defmulti@1.1.2"
+# run "https://bundle.run/@babel/plugin-proposal-optional-chaining@7.2.0"
+# run "https://bundle.run/@fullcalendar/core@4.1.0"
+# run "https://bundle.run/png-chunks-extract@1.0.0"
+# run "https://bundle.run/lodash.uniqby"
+# run "https://bundle.run/@thi.ng/defmulti@1.1.1"
+# run "https://bundle.run/hersheytext@0.5.1"
+# run "https://bundle.run/png-chunk-text@1.0.0"
+# run "https://bundle.run/@fullcalendar/core@4.2.0"
+# run "https://bundle.run/zebras@0.0.11"
+# run "https://bundle.run/@babel/plugin-proposal-class-properties@7.5.5"
+# run "https://bundle.run/lodash.uniqby@4.7.0"
+# run "https://bundle.run/fontfaceobserver@2.1.0"
+# run "https://bundle.run/twgl.js@4.5.2"
+# run "https://bundle.run/@thi.ng/atom"
+# run "https://bundle.run/tap-browser-color@latest"
+# run "https://bundle.run/parlx.js"
+# run "https://bundle.run/tape@latest"
+# run "https://bundle.run/buffer@5.2.1"
+# run "https://bundle.run/tape"
+
+# # npm top
+run "https://bundle.run/request"
+run "https://bundle.run/chalk"
+run "https://bundle.run/commander"
+run "https://bundle.run/express"
+run "https://bundle.run/async"
+run "https://bundle.run/react"
+run "https://bundle.run/debug"
+
+# # other
+run "https://bundle.run/wrangler"
+run "https://bundle.run/url"
+run "https://bundle.run/clone"
+run "https://bundle.run/crypto-js"
+run "https://bundle.run/ip"
+
+# failing
+run "https://bundle.run/test-sloppy"
+run "https://bundle.run/geojson2h3@1.0.1"
